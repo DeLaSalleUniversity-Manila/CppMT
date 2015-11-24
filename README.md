@@ -34,6 +34,51 @@ On Linux, you will probably call
 ```
 make
 ```
+
+Ex.
+
+```shell
+$ ls
+CMakeLists.txt  CMT.h       common.h       Consensus.h  Fusion.cpp  getopt   gui.h    logging   Matcher.cpp  README.md    Tracker.h
+CMT.cpp         common.cpp  Consensus.cpp  fastcluster  Fusion.h    gui.cpp  LICENSE  main.cpp  Matcher.h    Tracker.cpp  trax.cpp
+
+$ cmake .
+-- The C compiler identification is GNU 4.8.1
+-- The CXX compiler identification is GNU 4.9.2
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cobalt/repos/CppMT
+
+$ make
+Scanning dependencies of target cmt
+[ 11%] Building CXX object CMakeFiles/cmt.dir/common.cpp.o
+[ 22%] Building CXX object CMakeFiles/cmt.dir/gui.cpp.o
+[ 33%] Building CXX object CMakeFiles/cmt.dir/main.cpp.o
+[ 44%] Building CXX object CMakeFiles/cmt.dir/CMT.cpp.o
+[ 55%] Building CXX object CMakeFiles/cmt.dir/Consensus.cpp.o
+[ 66%] Building CXX object CMakeFiles/cmt.dir/Fusion.cpp.o
+[ 77%] Building CXX object CMakeFiles/cmt.dir/Matcher.cpp.o
+[ 88%] Building CXX object CMakeFiles/cmt.dir/Tracker.cpp.o
+[100%] Building CXX object CMakeFiles/cmt.dir/fastcluster/fastcluster.cpp.o
+Linking CXX executable cmt
+[100%] Built target cmt
+
+```
+
+
+
 afterwards, while on Windows you will open the project file in Visual Studio and start the build there.
 
 ## Note for Windows users
